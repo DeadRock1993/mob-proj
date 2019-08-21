@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("/img/Layer_1.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 152px;
+}
+.row {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.logo {
+  position: relative;
+  top: 14px;
+  left: 31px;
+}
+.logo-in-vid {
+  display: block;
+  position: relative;
+  top: 26px;
+  margin: 0 auto;
+}
+.menu {
+  display: block;
+  width: 100%;
+  max-width: 588px;
+  position: relative;
+  top: 37px;
+  word-break: break-word;
+}
+.menu a {
+  color: #231f20;
+  font-family: Roboto;
+  font-size: 1.379rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px 14px 10px;
+}
+.menu a:first-child {
+  padding: 0 15px 14px 22px;
+}
+.active-menu {
+  border-bottom: 5px solid black;
+}
+@media screen and (max-width: 639px) {
+  header {
+    height: 300px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu a {
+    margin-bottom: 5px;
+  }
+}
+.share {
+  width: 100%;
+  max-width: 116px;
+  height: 47px;
+  color: #000;
+  float: right;
+  position: relative;
+  top: 24px;
+  right: 79px;
+  padding-left: 17px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.share:hover {
+  color: #fff;
+  background-color: #000;
+}
+.shareimg {
+  width: 13px;
+  height: 15px;
+}
+.Textshare {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.X {
+  float: right;
+  position: relative;
+  top: 40px;
+  right: 25px;
+}
+main {
+  height: 771px;
+  padding-top: 57px;
+}
+.backcolor {
+  background-color: #000000;
+}
+
+.textadver {
+  position: relative;
+  width: 100%;
+  max-width: 395px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18.33px;
+}
+
+.video-container {
+  background-image: url("/img/Layer_1.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: 50% 50%;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 398px;
+  height: 398px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.video {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 55px auto;
+}
+
+footer {
+  background: #72b5bd;
+  height: 138px;
+}
+.tip {
+  position: relative;
+  top: 44px;
+  left: 47px;
+  width: 166px;
+  height: 57px;
+  color: #ffffff;
+  font-family: "Libre Baskerville";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.book-now {
+  position: relative;
+  float: right;
+  border: none;
+  top: 35px;
+  right: 41px;
+  width: 230px;
+  height: 67px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18.33px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+.book-now:hover {
+  border: 1px solid #fff;
+}
+
+/* close button */
+.close {
+  position: relative;
+  top: 40px;
+  float: right;
+  right: 25px;
+  width: 22px;
+  height: 16px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 21px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.btn-flex {
+  display: flex;
+  margin-top: 45px;
+  justify-content: space-around;
+}
+.btn {
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: uppercase;
+  flex-basis: 245px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+}
+.twitter {
+  background: #6eaddc;
+}
+
+.facebook {
+  background: #273a61;
+}
+.soc-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.box {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.box:hover {
+  transform: rotate(360deg);
+}
+.linkedin {
+  background: url("/img/Share_Icons.png") -30px -271px;
+}
+
+.tumblr {
+  background: url("/img/Share_Icons.png") -125px -271px;
+}
+
+.gmail {
+  background: url("/img/Share_Icons.png") -220px -271px;
+}
+.pin {
+  background: url("/img/Share_Icons.png") -312px -271px;
+}
+.reddit {
+  background: url("/img/Share_Icons.png") -408px -271px;
+}
+.StumbleUpon {
+  background: url("/img/Share_Icons.png") -502px -271px;
+}
+
+.cor-manual {
+  /* Style for "Rectangle" */
+  width: 496px;
+  height: 528px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+  background-color: #8b5353;
+}
